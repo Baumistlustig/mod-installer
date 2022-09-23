@@ -1,0 +1,29 @@
+<script src="header.component.ts"></script>
+<header>
+  <mat-toolbar color="primary">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="/projects">
+        <mat-icon>construction</mat-icon>
+        <span>Mods</span>
+      </a>
+      <a mat-menu-item routerLink="/imprint">
+        <mat-icon>description</mat-icon>
+        <span>Imprint</span>
+      </a>
+    </mat-menu>
+
+    <a mat-button routerLink="/"><h1>Mod-installer</h1></a>
+
+    <span fxFlex></span>
+
+    <a mat-button href="https://github.com/Baumistlustig/" target="_blank" fxLayoutAlign="center center"
+       class="github-button">
+      <img src="assets/pictures/GitHub-Mark-Light-120px-plus.png" class="github-logo" alt="github">
+      <span>Github</span>
+    </a>
+  </mat-toolbar>
+</header>
